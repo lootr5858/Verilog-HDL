@@ -1,0 +1,277 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -15.121
+TNS   : -168.272
+
+Type  : Slow 1100mV 85C Model Setup 'enable'
+Slack : -9.484
+TNS   : -92.065
+
+Type  : Slow 1100mV 85C Model Setup 'rst'
+Slack : -9.204
+TNS   : -75.226
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -6.399
+TNS   : -276.317
+
+Type  : Slow 1100mV 85C Model Setup 'addr[10]'
+Slack : -2.714
+TNS   : -6.451
+
+Type  : Slow 1100mV 85C Model Hold 'enable'
+Slack : -6.890
+TNS   : -70.205
+
+Type  : Slow 1100mV 85C Model Hold 'rst'
+Slack : -6.746
+TNS   : -67.225
+
+Type  : Slow 1100mV 85C Model Hold 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -4.647
+TNS   : -38.555
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -1.561
+TNS   : -8.297
+
+Type  : Slow 1100mV 85C Model Hold 'addr[10]'
+Slack : -1.557
+TNS   : -3.628
+
+Type  : Slow 1100mV 85C Model Recovery 'enable'
+Slack : -0.642
+TNS   : -3.930
+
+Type  : Slow 1100mV 85C Model Removal 'enable'
+Slack : -1.486
+TNS   : -9.325
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -3.161
+TNS   : -138.989
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'enable'
+Slack : -1.611
+TNS   : -55.984
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'rst'
+Slack : -1.189
+TNS   : -48.842
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -25.152
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'addr[10]'
+Slack : 0.282
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -14.900
+TNS   : -166.433
+
+Type  : Slow 1100mV 0C Model Setup 'enable'
+Slack : -9.410
+TNS   : -93.238
+
+Type  : Slow 1100mV 0C Model Setup 'rst'
+Slack : -9.072
+TNS   : -75.858
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -6.280
+TNS   : -269.962
+
+Type  : Slow 1100mV 0C Model Setup 'addr[10]'
+Slack : -2.616
+TNS   : -6.470
+
+Type  : Slow 1100mV 0C Model Hold 'enable'
+Slack : -6.829
+TNS   : -68.947
+
+Type  : Slow 1100mV 0C Model Hold 'rst'
+Slack : -6.671
+TNS   : -66.772
+
+Type  : Slow 1100mV 0C Model Hold 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -4.536
+TNS   : -38.935
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -1.626
+TNS   : -13.813
+
+Type  : Slow 1100mV 0C Model Hold 'addr[10]'
+Slack : -1.522
+TNS   : -3.627
+
+Type  : Slow 1100mV 0C Model Recovery 'enable'
+Slack : -0.750
+TNS   : -4.517
+
+Type  : Slow 1100mV 0C Model Removal 'enable'
+Slack : -1.488
+TNS   : -8.928
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -3.094
+TNS   : -139.008
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'enable'
+Slack : -1.665
+TNS   : -56.508
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'rst'
+Slack : -1.262
+TNS   : -48.239
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -27.285
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'addr[10]'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -8.591
+TNS   : -83.774
+
+Type  : Fast 1100mV 85C Model Setup 'enable'
+Slack : -5.547
+TNS   : -44.427
+
+Type  : Fast 1100mV 85C Model Setup 'rst'
+Slack : -5.431
+TNS   : -40.582
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -3.749
+TNS   : -165.117
+
+Type  : Fast 1100mV 85C Model Setup 'addr[10]'
+Slack : -1.630
+TNS   : -3.857
+
+Type  : Fast 1100mV 85C Model Hold 'enable'
+Slack : -4.278
+TNS   : -44.808
+
+Type  : Fast 1100mV 85C Model Hold 'rst'
+Slack : -3.820
+TNS   : -36.967
+
+Type  : Fast 1100mV 85C Model Hold 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -2.658
+TNS   : -21.858
+
+Type  : Fast 1100mV 85C Model Hold 'addr[10]'
+Slack : -0.952
+TNS   : -2.217
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -0.828
+TNS   : -5.252
+
+Type  : Fast 1100mV 85C Model Recovery 'enable'
+Slack : 0.246
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'enable'
+Slack : -0.846
+TNS   : -5.554
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -1.730
+TNS   : -59.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'enable'
+Slack : -1.084
+TNS   : -41.695
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'rst'
+Slack : -0.778
+TNS   : -23.137
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.080
+TNS   : -3.783
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'addr[10]'
+Slack : 0.059
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -7.811
+TNS   : -76.974
+
+Type  : Fast 1100mV 0C Model Setup 'enable'
+Slack : -5.041
+TNS   : -39.929
+
+Type  : Fast 1100mV 0C Model Setup 'rst'
+Slack : -4.914
+TNS   : -37.418
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -3.421
+TNS   : -150.258
+
+Type  : Fast 1100mV 0C Model Setup 'addr[10]'
+Slack : -1.467
+TNS   : -3.580
+
+Type  : Fast 1100mV 0C Model Hold 'enable'
+Slack : -4.038
+TNS   : -43.105
+
+Type  : Fast 1100mV 0C Model Hold 'rst'
+Slack : -3.581
+TNS   : -35.359
+
+Type  : Fast 1100mV 0C Model Hold 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -2.392
+TNS   : -19.875
+
+Type  : Fast 1100mV 0C Model Hold 'addr[10]'
+Slack : -0.920
+TNS   : -2.164
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.883
+TNS   : -7.317
+
+Type  : Fast 1100mV 0C Model Recovery 'enable'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'enable'
+Slack : -0.806
+TNS   : -5.201
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'uart_encode_dp:uart_encode_dp|rx_ten_eight:rx_ten_eight|PipeReg:bit_cnt|Q[0]'
+Slack : -1.475
+TNS   : -50.651
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'enable'
+Slack : -0.988
+TNS   : -35.308
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'rst'
+Slack : -0.710
+TNS   : -20.028
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.083
+TNS   : -3.886
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'addr[10]'
+Slack : 0.051
+TNS   : 0.000
+
+------------------------------------------------------------

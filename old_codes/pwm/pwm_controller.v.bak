@@ -1,0 +1,12 @@
+/*
+	!!! --- PWM CONTROLLER TOP MODULE --- !!!
+	
+	Connect between DATA PATH & CONTROL PATH modules
+	
+	!!! --- End of module specification --- !!!
+*/
+	
+
+module pwm_controller
+(
+	

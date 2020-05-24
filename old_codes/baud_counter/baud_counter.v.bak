@@ -1,0 +1,25 @@
+module baud_counter
+(
+	input wire 			clk;
+	input wire 			rst;
+	input wire			en;
+	input wire [19:0] baud;
+	
+	output wire baud_clk;
+);
+
+wire [19:0] baud_cnto;
+wire [19:0] baud_cntn;
+
+wire			baud_add;
+wire			baud_cnt;
+wire			baud_full
+
+assign baud_full = (baud_cnto == baud) ? 1'b1 : 1'b0;
+assign baud_cnt = baud_cnt0 + 20'b1;
+
+always @ *
+begin
+	casex ({rst, en, baud_full})
+		{1'b1, 1'bx, 1'bx}: {baud_clk, baud_cntn} = {1'b0, 20'b0};
+		{1'b0, 1'b0, 1'bx}: {baud_clk, baud_cntn} = {1'b0, 20'b0};

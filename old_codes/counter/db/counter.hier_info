@@ -1,0 +1,102 @@
+|counter
+clk => clk.IN1
+rst => rst.IN2
+en => en.IN1
+val[0] << cnt_o[0].DB_MAX_OUTPUT_PORT_TYPE
+val[1] << cnt_o[1].DB_MAX_OUTPUT_PORT_TYPE
+val[2] << cnt_o[2].DB_MAX_OUTPUT_PORT_TYPE
+val[3] << cnt_o[3].DB_MAX_OUTPUT_PORT_TYPE
+val[4] << cnt_o[4].DB_MAX_OUTPUT_PORT_TYPE
+val[5] << cnt_o[5].DB_MAX_OUTPUT_PORT_TYPE
+val[6] << cnt_o[6].DB_MAX_OUTPUT_PORT_TYPE
+val[7] << cnt_o[7].DB_MAX_OUTPUT_PORT_TYPE
+reached << counting:counting.reached
+
+
+|counter|counting:counting
+rst => cnt_n.OUTPUTSELECT
+rst => cnt_n.OUTPUTSELECT
+rst => cnt_n.OUTPUTSELECT
+rst => cnt_n.OUTPUTSELECT
+rst => cnt_n.OUTPUTSELECT
+rst => cnt_n.OUTPUTSELECT
+rst => cnt_n.OUTPUTSELECT
+rst => cnt_n.OUTPUTSELECT
+en => cnt_n.OUTPUTSELECT
+en => cnt_n.OUTPUTSELECT
+en => cnt_n.OUTPUTSELECT
+en => cnt_n.OUTPUTSELECT
+en => cnt_n.OUTPUTSELECT
+en => cnt_n.OUTPUTSELECT
+en => cnt_n.OUTPUTSELECT
+en => cnt_n.OUTPUTSELECT
+cnt_o[0] => Add0.IN16
+cnt_o[0] => Equal0.IN7
+cnt_o[1] => Add0.IN15
+cnt_o[1] => Equal0.IN6
+cnt_o[2] => Add0.IN14
+cnt_o[2] => Equal0.IN5
+cnt_o[3] => Add0.IN13
+cnt_o[3] => Equal0.IN0
+cnt_o[4] => Add0.IN12
+cnt_o[4] => Equal0.IN4
+cnt_o[5] => Add0.IN11
+cnt_o[5] => Equal0.IN3
+cnt_o[6] => Add0.IN10
+cnt_o[6] => Equal0.IN2
+cnt_o[7] => Add0.IN9
+cnt_o[7] => Equal0.IN1
+cnt_n[0] <= cnt_n.DB_MAX_OUTPUT_PORT_TYPE
+cnt_n[1] <= cnt_n.DB_MAX_OUTPUT_PORT_TYPE
+cnt_n[2] <= cnt_n.DB_MAX_OUTPUT_PORT_TYPE
+cnt_n[3] <= cnt_n.DB_MAX_OUTPUT_PORT_TYPE
+cnt_n[4] <= cnt_n.DB_MAX_OUTPUT_PORT_TYPE
+cnt_n[5] <= cnt_n.DB_MAX_OUTPUT_PORT_TYPE
+cnt_n[6] <= cnt_n.DB_MAX_OUTPUT_PORT_TYPE
+cnt_n[7] <= cnt_n.DB_MAX_OUTPUT_PORT_TYPE
+reached <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|PipeReg:cnt
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+RST => Q.OUTPUTSELECT
+RST => Q.OUTPUTSELECT
+RST => Q.OUTPUTSELECT
+RST => Q.OUTPUTSELECT
+RST => Q.OUTPUTSELECT
+RST => Q.OUTPUTSELECT
+RST => Q.OUTPUTSELECT
+RST => Q.OUTPUTSELECT
+EN => Q.OUTPUTSELECT
+EN => Q.OUTPUTSELECT
+EN => Q.OUTPUTSELECT
+EN => Q.OUTPUTSELECT
+EN => Q.OUTPUTSELECT
+EN => Q.OUTPUTSELECT
+EN => Q.OUTPUTSELECT
+EN => Q.OUTPUTSELECT
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+D[6] => Q.DATAB
+D[7] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

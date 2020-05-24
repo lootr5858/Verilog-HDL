@@ -1,0 +1,390 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Verilog/uart_apb/uart_apb/simulation/modelsim
+vapb_rx
+Z1 !s110 1579596192
+!i10b 1
+!s100 AdLn1KZL_eZCHdC4>SIiQ3
+IYRz3WQ>BVFYL_d?zCnW=<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1578900728
+8D:/Verilog/uart_apb/apb_rx/apb_rx.v
+FD:/Verilog/uart_apb/apb_rx/apb_rx.v
+L0 14
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1579596192.000000
+!s107 D:/Verilog/uart_apb/apb_rx/apb_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/uart_apb/apb_rx|D:/Verilog/uart_apb/apb_rx/apb_rx.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Verilog/uart_apb/apb_rx
+Z7 tCvgOpt 0
+vapb_rx_cp
+Z8 !s110 1579596191
+!i10b 1
+!s100 N^FlE9c2KK5@LmT=i75AN0
+I6enW3<A3FDPAI=8k:hNK?0
+R2
+R0
+w1579161319
+8D:/Verilog/uart_apb/apb_rx/apb_rx_cp.v
+FD:/Verilog/uart_apb/apb_rx/apb_rx_cp.v
+L0 9
+R3
+r1
+!s85 0
+31
+Z9 !s108 1579596191.000000
+!s107 D:/Verilog/uart_apb/apb_rx/apb_rx_cp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/uart_apb/apb_rx|D:/Verilog/uart_apb/apb_rx/apb_rx_cp.v|
+!i113 1
+R5
+R6
+R7
+vapb_rx_dp
+R8
+!i10b 1
+!s100 :`4BWaH[b5XE32I1EcPIn2
+IMUSRF9hf=5MmRhC4<F=bN3
+R2
+R0
+w1579161324
+8D:/Verilog/uart_apb/apb_rx/apb_rx_dp.v
+FD:/Verilog/uart_apb/apb_rx/apb_rx_dp.v
+Z10 L0 10
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Verilog/uart_apb/apb_rx/apb_rx_dp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/uart_apb/apb_rx|D:/Verilog/uart_apb/apb_rx/apb_rx_dp.v|
+!i113 1
+R5
+R6
+R7
+vapb_tx
+R1
+!i10b 1
+!s100 KBfRL`JPBK[zUA7z]K9f70
+Il_U9bKOG@<E4QBRZMF^I:3
+R2
+R0
+w1578271182
+8D:/Verilog/uart_apb/apb_tx/apb_tx.v
+FD:/Verilog/uart_apb/apb_tx/apb_tx.v
+Z11 L0 13
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/uart_apb/apb_tx/apb_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/uart_apb/apb_tx|D:/Verilog/uart_apb/apb_tx/apb_tx.v|
+!i113 1
+R5
+Z12 !s92 -vlog01compat -work work +incdir+D:/Verilog/uart_apb/apb_tx
+R7
+vapb_tx_cp
+R1
+!i10b 1
+!s100 =kFS093QU^>4ccCEPmL^e1
+IEGNblYGcG5XzCZno:Omc`1
+R2
+R0
+w1579161331
+8D:/Verilog/uart_apb/apb_tx/apb_tx_cp.v
+FD:/Verilog/uart_apb/apb_tx/apb_tx_cp.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/uart_apb/apb_tx/apb_tx_cp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/uart_apb/apb_tx|D:/Verilog/uart_apb/apb_tx/apb_tx_cp.v|
+!i113 1
+R5
+R12
+R7
+vapb_tx_dp
+R1
+!i10b 1
+!s100 XKNSV4mg;oo0Y`e:LeBHi3
+I?CmgCB=]Uo>V_j[_gd3452
+R2
+R0
+w1579161337
+8D:/Verilog/uart_apb/apb_tx/apb_tx_dp.v
+FD:/Verilog/uart_apb/apb_tx/apb_tx_dp.v
+R10
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/uart_apb/apb_tx/apb_tx_dp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/uart_apb/apb_tx|D:/Verilog/uart_apb/apb_tx/apb_tx_dp.v|
+!i113 1
+R5
+R12
+R7
+vbaud_counter
+R1
+!i10b 1
+!s100 T[WLQ2P3NGV5BR3iN8;jA3
+IBWSXCc6n;;i_EOhzR:l430
+R2
+R0
+w1578033734
+8D:/Verilog/aESSENTIALS/baud_counter.v
+FD:/Verilog/aESSENTIALS/baud_counter.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/aESSENTIALS/baud_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/aESSENTIALS|D:/Verilog/aESSENTIALS/baud_counter.v|
+!i113 1
+R5
+Z13 !s92 -vlog01compat -work work +incdir+D:/Verilog/aESSENTIALS
+R7
+vLatchN
+R1
+!i10b 1
+!s100 3[hQ_<[;Wb:h`^::hnfhE1
+IVgoa93n2^eANA7^CzIK_G1
+R2
+R0
+Z14 w1378073400
+Z15 8D:/Verilog/aESSENTIALS/REGISTER.v
+Z16 FD:/Verilog/aESSENTIALS/REGISTER.v
+L0 46
+R3
+r1
+!s85 0
+31
+R4
+Z17 !s107 D:/Verilog/aESSENTIALS/REGISTER.v|
+Z18 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/aESSENTIALS|D:/Verilog/aESSENTIALS/REGISTER.v|
+!i113 1
+R5
+R13
+R7
+n@latch@n
+vLatchN_gate
+R1
+!i10b 1
+!s100 8AjaWP2?8EM=>1jIeHlXj3
+IgZPO1<=zC@OdR2=]iaKOI0
+R2
+R0
+R14
+R15
+R16
+L0 60
+R3
+r1
+!s85 0
+31
+R4
+R17
+R18
+!i113 1
+R5
+R13
+R7
+n@latch@n_gate
+vPipeReg
+R1
+!i10b 1
+!s100 z?>;_AV<idaVeCUE_z7o[1
+IF>NO34ZnIA7_XODo?E52`1
+R2
+R0
+R14
+R15
+R16
+L0 109
+R3
+r1
+!s85 0
+31
+R4
+R17
+R18
+!i113 1
+R5
+R13
+R7
+n@pipe@reg
+vPipeRegS
+R1
+!i10b 1
+!s100 R6:ajSQU@jb^R<hea@V;43
+Ie?FChUM>iz5z9O:d@G]H33
+R2
+R0
+R14
+R15
+R16
+L0 92
+R3
+r1
+!s85 0
+31
+R4
+R17
+R18
+!i113 1
+R5
+R13
+R7
+n@pipe@reg@s
+vREG
+R1
+!i10b 1
+!s100 O?`YJiQ0f1[5;FW1hUJYI3
+IPWmfYncC[;:gZY:P6e5JY0
+R2
+R0
+R14
+R15
+R16
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+R17
+R18
+!i113 1
+R5
+R13
+R7
+n@r@e@g
+vSyncRegN
+R1
+!i10b 1
+!s100 fi0E3?3CM25Y5dHfGiY543
+I4K3zG=Y^Q5>4Gzm<RDloW2
+R2
+R0
+R14
+R15
+R16
+L0 78
+R3
+r1
+!s85 0
+31
+R4
+R17
+R18
+!i113 1
+R5
+R13
+R7
+n@sync@reg@n
+vuart_apb
+R1
+!i10b 1
+!s100 ThkA4Mb5Wj2ieWfm7<eNz1
+I6<FJg?ed^X=53I6N9K;K:0
+R2
+R0
+w1579594554
+8D:/Verilog/uart_apb/uart_apb/uart_apb.v
+FD:/Verilog/uart_apb/uart_apb/uart_apb.v
+R11
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/uart_apb/uart_apb/uart_apb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/uart_apb/uart_apb|D:/Verilog/uart_apb/uart_apb/uart_apb.v|
+!i113 1
+R5
+Z19 !s92 -vlog01compat -work work +incdir+D:/Verilog/uart_apb/uart_apb
+R7
+vuart_apb_cp
+R1
+!i10b 1
+!s100 N:K0<Wf@aEB]ZB?cE@[HQ1
+IiO6U<5SdG7?W_JNWj2fzR2
+R2
+R0
+w1579508060
+8D:/Verilog/uart_apb/uart_apb/uart_apb_cp.v
+FD:/Verilog/uart_apb/uart_apb/uart_apb_cp.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/uart_apb/uart_apb/uart_apb_cp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/uart_apb/uart_apb|D:/Verilog/uart_apb/uart_apb/uart_apb_cp.v|
+!i113 1
+R5
+R19
+R7
+vuart_apb_dp
+R1
+!i10b 1
+!s100 Kf33Jmz@3j;WaG>fG5WHn0
+I5O]7P4YVLd<bRSH:JC2BF0
+R2
+R0
+w1579596055
+8D:/Verilog/uart_apb/uart_apb/uart_apb_dp.v
+FD:/Verilog/uart_apb/uart_apb/uart_apb_dp.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/uart_apb/uart_apb/uart_apb_dp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/uart_apb/uart_apb|D:/Verilog/uart_apb/uart_apb/uart_apb_dp.v|
+!i113 1
+R5
+R19
+R7
+vuart_tb
+R1
+!i10b 1
+!s100 Pbn2XFRhHLn5D`7Jk`OBF2
+Il^Q<6:JnJ6bD=1l:?kTQS2
+R2
+R0
+w1579594649
+8D:/Verilog/uart_apb/uart_apb/uart_tb.v
+FD:/Verilog/uart_apb/uart_apb/uart_tb.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/uart_apb/uart_apb/uart_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/uart_apb/uart_apb|D:/Verilog/uart_apb/uart_apb/uart_tb.v|
+!i113 1
+R5
+R19
+R7

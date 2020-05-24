@@ -1,0 +1,33 @@
+/*
+	!!! --- UART APB TX Top module --- !!!
+	
+	Transmit 8/10 bit (depending on mode)
+	Transmit bit-by-bit according to baudrate
+	
+	Control Path:
+	
+	Data Path:
+*/
+
+module apb_tx
+(
+	// Input:
+	input wire			clk,
+	input wire			rstn,
+	input wire			sel,
+	input wire			set,
+	input wire			mode,
+	input wire [7:0]  din,
+	input wire [19:0] baud,
+	
+	// Output:
+	output wire tx_en,
+	output wire tx_out
+);
+
+// Internal wires/regs
+wire [9:0] 	bit_cnto;
+wire [9:0] 	bit_cntn;
+wire [19:0] baud_cnto;
+wire [19:0] baud_cntn;
+wire			baud_clk;

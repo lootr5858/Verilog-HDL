@@ -1,0 +1,186 @@
+/* 
+	----------------------------------------
+			!!! UART APB Testbench !!!
+	----------------------------------------
+	
+*/
+
+module uart_tb();
+
+
+
+/* ------------------
+	testbench variable
+	------------------ */
+localparam period = 5;
+localparam cycle = period * 2;
+
+
+/* ---------------
+	Universal Input
+	--------------- */
+wire			clk;
+wire			rstn;
+wire [11:2] addr; 			 // partial register address
+
+
+/* ----------------
+	UART 1 variables
+	---------------- */
+// Essential Input
+wire			sel1;
+wire			en1;				 // active HIGH enable for transfer control
+wire			write_control1;	 // active HIGH control to write to APB reg
+wire [31:0] write_data1;		 // data from SOC to APB
+
+// Essential Output
+wire [31:0] read_data1;	// data from APB to SOC
+wire			ready1;
+
+// Tx Output
+wire tx_en1;	 	// enable transmission
+wire tx_out1; 	// transmitted data
+
+// Rx Input
+wire	rx_in1;	// data received from other APB modules
+
+// Rx output
+wire	rx_en1;	// active HIGH enable to receive signals
+
+
+/* ----------------
+	UART 2 variables
+	---------------- */
+// Essential Input
+wire			sel2;
+wire			en2;				 // active HIGH enable for transfer control
+wire			write_control2; // active HIGH control to write to APB reg
+wire [31:0] write_data2;	 // data from SOC to APB
+
+// Essential Output
+wire [31:0] read_data2;	// data from APB to SOC
+wire			ready2;
+
+// Tx Output
+wire tx_en2;	// enable transmission
+wire tx_out2; 	// transmitted data
+
+// Rx Input
+wire	rx_in2;	// data received from other APB modules
+
+// Rx output
+wire	rx_en2;	// active HIGH enable to receive signals
+
+
+
+
+
+/* ---------------------
+	test module instances
+	--------------------- */
+uart_apb uart1
+(
+	// Essential Inputs:
+	.clk				(clk),
+	.rstn				(rstn),
+	.sel				(sel1),
+	.addr				(addr), 			 	 // partial register address
+	.en				(en1),				 	 // active HIGH enable for transfer control
+	.write_control (wirte_control1),	 // active HIGH control to write to APB reg
+	.write_data		(write_data1),		 // data from SOC to APB
+	
+	// Essential Outputs:
+	.read_data (read_data1),	// data from APB to SOC
+	.ready	  (ready1),
+	
+	// TX Outputs:
+	.tx_en  (tx_en1),	// enable transmission
+	.tx_out (tx_out1),	// transmitted data	
+	
+	// RX Inputs:
+	.rx_in (rx_in1),	// data received from other APB modules
+	
+	// RX Outputs:
+	.rx_en (rx_en1),	// active HIGH enable to receive signals
+);
+
+uart_apb uart1
+(
+	// Essential Inputs:
+	.clk				(clk),
+	.rstn				(rstn),
+	.sel				(sel2),
+	.addr				(addr), 			 	 // partial register address
+	.en				(en2),				 	 // active HIGH enable for transfer control
+	.write_control (wirte_control2),	 // active HIGH control to write to APB reg
+	.write_data		(write_data2),		 // data from SOC to APB
+	
+	// Essential Outputs:
+	.read_data (read_data2),	// data from APB to SOC
+	.ready	  (ready2),
+	
+	// TX Outputs:
+	.tx_en  (tx_en2),	// enable transmission
+	.tx_out (tx_out2),	// transmitted data	
+	
+	// RX Inputs:
+	.rx_in (rx_in2),	// data received from other APB modules
+	
+	// RX Outputs:
+	.rx_en (rx_en2),	// active HIGH enable to receive signals
+);
+
+
+/* ----------------
+	Clock Generation
+	---------------- */
+initial clk <= 1'b1;
+always #(period) clk <= ~clk;
+
+
+/* -----------------
+	Signal Generation
+	----------------- */
+// S.G. Variables
+reg			tx_12;
+reg [31:0] seq_o;
+reg [31:0] seg_n;
+
+// S.G. Logic
+always @ *
+begin
+
+	casex ({rstn, tx_12, seg_o})
+	
+		// Reset
+		{1'b0, 1'bx, 32'bx}: begin
+										// Universal
+										addr <= 20'b0;
+										
+										// UART 1 Inputs
+										sel1 				<= 1'b0;
+										en1  				<= 1'b0;
+										write_control1 <= 1'b0;
+										write_data1		<= 32'bx;
+										
+										// UART 2 Inputs
+										sel2 				<= 1'b0;
+										en2 				<= 1'b0;
+										write_control2 <= 1'b0;
+										write_data2		<= 32'bx;
+
+
+/* -------------
+	Reset Control
+	------------- */
+initial
+begin
+	
+	rstn  <= 1'b0;
+	
+	#(cycle * 2)
+	
+	rstn <= 1'b1;
+
+end
+

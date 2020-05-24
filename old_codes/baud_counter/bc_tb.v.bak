@@ -1,0 +1,53 @@
+module bc_tb();
+
+localparam period = 5;
+localparam cycle = period * 2;
+
+wire			clk;
+wire			rst;
+wire			en;
+wire [19:0] baud;
+
+wire			baud_clk;
+
+baud_counter baud_counter
+(
+	.clk	(clk),
+	.rst	(rst),
+	.en	(en),
+	.baud (baud),
+	.baud_clk (baud_clk)
+);
+
+initial clk <= 1'b1;
+always #(period) clk = ~clk;
+
+// Reset control
+initial
+begin
+	rst = 1'b1;
+	
+	#(cycle * 2)
+	
+	rst = 1'b0;
+end
+
+// Simulation
+initial
+begin
+	baud = 20'd20;
+	
+	#(cycle * 4)
+	
+	en = 1'b1;
+	
+	#(cycle * 100)
+	
+	en = 1'b0;
+	
+	#(cycle * 2)
+	
+	$finish();
+end
+
+endmodule

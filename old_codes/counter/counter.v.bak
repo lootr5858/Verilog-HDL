@@ -1,0 +1,9 @@
+module counter
+(
+	input			clk,
+	input			rst,
+	input			en,
+	
+	output [7:0] val
+);
+

@@ -1,0 +1,19 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/Verilog/uart_apb/apb_rx {D:/Verilog/uart_apb/apb_rx/apb_rx_dp.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/uart_apb/apb_rx {D:/Verilog/uart_apb/apb_rx/apb_rx_cp.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/uart_apb/apb_rx {D:/Verilog/uart_apb/apb_rx/apb_rx.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/uart_apb/apb_tx {D:/Verilog/uart_apb/apb_tx/apb_tx_dp.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/uart_apb/apb_tx {D:/Verilog/uart_apb/apb_tx/apb_tx_cp.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/uart_apb/apb_tx {D:/Verilog/uart_apb/apb_tx/apb_tx.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/aESSENTIALS {D:/Verilog/aESSENTIALS/REGISTER.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/aESSENTIALS {D:/Verilog/aESSENTIALS/baud_counter.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/uart_apb/uart_apb {D:/Verilog/uart_apb/uart_apb/uart_apb.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/uart_apb/uart_apb {D:/Verilog/uart_apb/uart_apb/uart_apb_cp.v}
+vlog -vlog01compat -work work +incdir+D:/Verilog/uart_apb/uart_apb {D:/Verilog/uart_apb/uart_apb/uart_apb_dp.v}
+

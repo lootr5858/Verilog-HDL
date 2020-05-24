@@ -1,0 +1,23 @@
+/* ----------------------------------------
+		!!! UART APB Control module !!!
+	----------------------------------------
+	
+	Switch between RX & TX modes
+	
+*/
+
+module uart_apb_cp
+(
+	// Inputs:
+	input wire			rstn,
+	input wire			sel,
+	input wire [11:2] addr, 			 // partial register address
+	input wire			en,				 // active HIGH enable for transfer control
+	
+	// Outputs:
+	output wire	ready,
+	output wire sel_rx,
+	output wire sel_tx,
+	output wire sel_ctrl,
+	output wire sel_baud
+);

@@ -1,0 +1,122 @@
+/* ----------------------------------------
+		!!! UART APB Top module !!!
+	----------------------------------------
+	
+	rx & tx 8/10 bit (depending on mode)
+	rx & tx bit-by-bit according to baudrate
+	
+	Control Path:
+	
+	Data Path:
+*/
+
+module uart_apb
+(
+	// Essential Inputs:
+	input wire			clk,
+	input wire			rstn,
+	input wire			sel,
+	input wire			mode,
+	input wire [19:0] baud,
+	
+	// RX Inputs:
+	input wire			rx_en,
+	input wire			rx_in,
+	
+	// RX Outputs:
+	output wire [31:0] rx_data
+	
+	// TX Inputs:
+	
+	
+	// TX Outputs:
+	output wire tx_en,	// enable transmission
+	output wire tx_out	// transmitted data
+);
+
+
+/* -------------------
+	internal wires/regs
+	------------------- */
+// Essential wires
+wire rst;
+	
+wire sel_rx;
+wire sel_tx;
+
+wire [9:0] bit_cnto;
+wire [9:0]  bit_cntn;
+
+wire			start_bit;
+wire			end_bit;
+wire [9:0]	data_bit;
+
+wire [19:0] baud_cnto;
+wire [19:0] baud_cntn;
+wire		   baud_clk;
+
+// TX wires
+wire [9:0] din;
+wire			set,		// set DUTY & PERIOD. enable PWM
+
+
+/* -----------------------
+	connect RX & TX modules
+	----------------------- */
+apb_rx apb_rx
+(
+	// Inputs:
+	.clk		(clk),
+	.rstn		(rstn),
+	.sel		(sel_rx),
+	.rx_en	(rx_en),
+	.mode		(mode),
+	.baud		(baud),
+	.rx_in	(rx_in),
+	
+	// Outputs:
+	.rx_data (rx_data)
+);
+
+apb_tx apb_tx
+(
+	// Input:
+	.clk,
+	.rstn,		// active LOW to reset
+	.sel,		// activate apb_tx module
+	.set,		// set DUTY & PERIOD. enable PWM
+	.mode,		// switch between 8 bit & 10 bit tx
+	.din,		// input data for transmission
+	.baud,		// bauddiv
+	
+	// Output:
+	.tx_en,	// enable transmission
+	.tx_out	// transmitted data
+);
+
+
+/* ----------------
+	connecting wires
+	---------------- */ 
+assign rst = ~rstn;
+
+PipeReg #(10) bit_cnt
+(
+	.CLK (clk),
+	.RST (rst),
+	.EN  (1'b1),
+	.D	  (bit_cntn),
+	.Q	  (bit_cnto)
+);
+
+PipeReg #(20) baud_cnt
+(
+	.CLK (clk),
+	.RST (rst),
+	.EN  (1'b1),
+	.D	  (baud_cntn),
+	.Q	  (baud_cnto)
+);
+
+endmodule
+	

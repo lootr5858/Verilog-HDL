@@ -1,0 +1,43 @@
+/*
+	!!! --- UART TX Control module --- !!!
+	
+	# of bits to transmit according to mode: 8  bits
+														  10 bits
+	
+	Call for transmission of start, next & end bits
+*/
+
+module apb_tx_cp
+(
+	// Inputs:
+	input wire			rstn,			// active LOW to reset
+	input wire			sel,			// activate apb_tx module
+	input wire			set,			// set DUTY & PERIOD. enable PWM
+	input wire 			mode,			// switch between 8 bit & 10 bit tx
+	input wire			baud_clk,	// signal to transmit next bit
+	input wire [9:0]  bit_cnto,	// # of bits transmitted
+	
+	// Outputs:
+	output reg [9:0] bit_cntn,	// index of bit transmitting now
+	output reg		  tx_en
+);
+
+// Constant parameters for control path
+localparam eight_bit = 8;
+localparam ten_bit	= 10;
+
+// Internal control path wires
+wire [9:0] upper_cnt;
+wire		  start_bit;	// signal for start bit
+wire		  end_bit;		// signal for end bit
+
+// Condition check
+assign upper_cnt = (mode == 1'b1) 						? ten_bit : eight_bit;
+assign start_bit = (bit_cnto == 10'd0) 				? 1'b1 	 : 1'b0;
+assign end_bit	  = (bit_cnto == upper_cnt - 10'b1) ? 1'b1	 : 1'b0;
+
+// Control Operations
+always @ *
+begin
+	
+	casex ({rstn, sel, set, 

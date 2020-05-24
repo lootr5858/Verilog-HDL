@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at fivebitcounter.v(32): always construct contains both blocking and non-blocking assignments File: D:/Verilog/fivebitcounter/fivebitcounter.v Line: 32

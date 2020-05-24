@@ -1,0 +1,214 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Verilog/old_codes/baud_counter/simulation/modelsim
+vbaud_counter
+Z1 !s110 1578033305
+!i10b 1
+!s100 E1BVVjh0<:X0aTYa4@bF01
+IMkB5:i]9PBnZBJ[L0RM4D2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1578033111
+8D:/Verilog/old_codes/baud_counter/baud_counter.v
+FD:/Verilog/old_codes/baud_counter/baud_counter.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1578033304.000000
+!s107 D:/Verilog/old_codes/baud_counter/baud_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/old_codes/baud_counter|D:/Verilog/old_codes/baud_counter/baud_counter.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Verilog/old_codes/baud_counter
+Z7 tCvgOpt 0
+vbc_tb
+R1
+!i10b 1
+!s100 1c6BF`LZbFB3UUMJLbW>=0
+I[]3JQOIeH3<2Y`7853VGd1
+R2
+R0
+w1578033143
+8D:/Verilog/old_codes/baud_counter/bc_tb.v
+FD:/Verilog/old_codes/baud_counter/bc_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1578033305.000000
+!s107 D:/Verilog/old_codes/baud_counter/bc_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/old_codes/baud_counter|D:/Verilog/old_codes/baud_counter/bc_tb.v|
+!i113 1
+R5
+R6
+R7
+vcounter
+Z8 !s110 1578033304
+!i10b 1
+!s100 8C`[fU4Bk;9hIAl3IKALF3
+IDE_zFMM1<b>RPjL6jSMi51
+R2
+R0
+w1578032865
+8D:/Verilog/old_codes/baud_counter/counter.v
+FD:/Verilog/old_codes/baud_counter/counter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/old_codes/baud_counter/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/old_codes/baud_counter|D:/Verilog/old_codes/baud_counter/counter.v|
+!i113 1
+R5
+R6
+R7
+vLatchN
+R8
+!i10b 1
+!s100 3[hQ_<[;Wb:h`^::hnfhE1
+IVgoa93n2^eANA7^CzIK_G1
+R2
+R0
+Z9 w1378073400
+Z10 8D:/Verilog/aESSENTIALS/REGISTER.v
+Z11 FD:/Verilog/aESSENTIALS/REGISTER.v
+L0 46
+R3
+r1
+!s85 0
+31
+R4
+Z12 !s107 D:/Verilog/aESSENTIALS/REGISTER.v|
+Z13 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/aESSENTIALS|D:/Verilog/aESSENTIALS/REGISTER.v|
+!i113 1
+R5
+Z14 !s92 -vlog01compat -work work +incdir+D:/Verilog/aESSENTIALS
+R7
+n@latch@n
+vLatchN_gate
+R8
+!i10b 1
+!s100 8AjaWP2?8EM=>1jIeHlXj3
+IgZPO1<=zC@OdR2=]iaKOI0
+R2
+R0
+R9
+R10
+R11
+L0 60
+R3
+r1
+!s85 0
+31
+R4
+R12
+R13
+!i113 1
+R5
+R14
+R7
+n@latch@n_gate
+vPipeReg
+R8
+!i10b 1
+!s100 z?>;_AV<idaVeCUE_z7o[1
+IF>NO34ZnIA7_XODo?E52`1
+R2
+R0
+R9
+R10
+R11
+L0 109
+R3
+r1
+!s85 0
+31
+R4
+R12
+R13
+!i113 1
+R5
+R14
+R7
+n@pipe@reg
+vPipeRegS
+R8
+!i10b 1
+!s100 R6:ajSQU@jb^R<hea@V;43
+Ie?FChUM>iz5z9O:d@G]H33
+R2
+R0
+R9
+R10
+R11
+L0 92
+R3
+r1
+!s85 0
+31
+R4
+R12
+R13
+!i113 1
+R5
+R14
+R7
+n@pipe@reg@s
+vREG
+R8
+!i10b 1
+!s100 O?`YJiQ0f1[5;FW1hUJYI3
+IPWmfYncC[;:gZY:P6e5JY0
+R2
+R0
+R9
+R10
+R11
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+R12
+R13
+!i113 1
+R5
+R14
+R7
+n@r@e@g
+vSyncRegN
+R8
+!i10b 1
+!s100 fi0E3?3CM25Y5dHfGiY543
+I4K3zG=Y^Q5>4Gzm<RDloW2
+R2
+R0
+R9
+R10
+R11
+L0 78
+R3
+r1
+!s85 0
+31
+R4
+R12
+R13
+!i113 1
+R5
+R14
+R7
+n@sync@reg@n

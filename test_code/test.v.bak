@@ -1,0 +1,7 @@
+module test
+(
+	wire input [31:0] in1,
+	
+	wire output [31:0] out1
+)
+

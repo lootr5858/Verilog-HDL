@@ -1,0 +1,13 @@
+Warning (10273): Verilog HDL warning at apb_tx_cp.v(56): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apb_tx_cp.v Line: 56
+Warning (10273): Verilog HDL warning at apb_tx_cp.v(77): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apb_tx_cp.v Line: 77
+Warning (10273): Verilog HDL warning at apb_tx_cp.v(84): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apb_tx_cp.v Line: 84
+Warning (10273): Verilog HDL warning at apb_tx_cp.v(91): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apb_tx_cp.v Line: 91
+Warning (10273): Verilog HDL warning at apb_tx_cp.v(98): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apb_tx_cp.v Line: 98
+Warning (10273): Verilog HDL warning at apb_tx_cp.v(104): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apb_tx_cp.v Line: 104
+Warning (10273): Verilog HDL warning at apb_tx_dp.v(34): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apb_tx_dp.v Line: 34
+Warning (10273): Verilog HDL warning at apb_tx_dp.v(47): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apb_tx_dp.v Line: 47
+Warning (10273): Verilog HDL warning at apb_tx_dp.v(48): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apb_tx_dp.v Line: 48
+Warning (10273): Verilog HDL warning at apt_tx_tb.v(109): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apt_tx_tb.v Line: 109
+Warning (10273): Verilog HDL warning at apt_tx_tb.v(110): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apt_tx_tb.v Line: 110
+Warning (10273): Verilog HDL warning at apt_tx_tb.v(132): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apt_tx_tb.v Line: 132
+Warning (10273): Verilog HDL warning at apt_tx_tb.v(133): extended using "x" or "z" File: D:/Verilog/uart_apb/apb_tx/apt_tx_tb.v Line: 133

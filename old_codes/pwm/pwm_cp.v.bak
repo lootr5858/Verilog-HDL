@@ -1,0 +1,41 @@
+/*
+	!!! --- PWM CONTROL PATH MODULE --- !!!
+	
+	Control the generation of PWM Signals
+	
+	Input Controls:
+		CLK:  clockspeed
+		RST:  reset ENTIRE system
+		SET:  start generation of PWM signal according to PERIOD & DUTY inputs
+		STOP: stop pwm input signal
+		
+	Reset controls:
+		RST_P:	reset period conters (CNT_P_O & CNT_P_N)
+		RST_D:	reset duty counters (CNT_C_O & CNT_C_N)
+		RST_PWM: set PWM signal to low
+	
+	!!! --- End of module specification --- !!!
+*/
+
+module pwm_cp
+(
+	// input controls
+	input wire CLK,
+	input wire RST,
+	input wire SET,
+	input wire STOP,
+	
+	// reset controls
+	input wire RST_P,
+	input wire RST_D,
+	input wire RST_pwm
+	
+	// selection control
+	input wire start,
+	input wire finish
+);
+
+// internal wires
+reg [5:0] control_out;
+
+assign {RST_P, RST_D, RST_PWM, start, finish} = control_out;

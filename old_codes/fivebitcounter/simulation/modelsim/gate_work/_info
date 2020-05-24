@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Verilog/fivebitcounter/simulation/modelsim
+vfivebitcounter
+Z1 !s110 1569200790
+!i10b 1
+!s100 >ZI5Cn@]bZWId<Z6zAZZn3
+II]eMli4[fPofl^1H7gTPU0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1569200730
+8fivebitcounter.vo
+Ffivebitcounter.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1569200790.000000
+!s107 fivebitcounter.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|fivebitcounter.vo|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z6 tCvgOpt 0
+vtestbench
+R1
+!i10b 1
+!s100 bL9?^eb;h9QHaCH3?S=@H2
+I;<n9h30]Nim8=ELWR>R7J3
+R2
+R0
+w1569200658
+8D:/Verilog/fivebitcounter/testbench.v
+FD:/Verilog/fivebitcounter/testbench.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/fivebitcounter/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/fivebitcounter|D:/Verilog/fivebitcounter/testbench.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/Verilog/fivebitcounter
+R6

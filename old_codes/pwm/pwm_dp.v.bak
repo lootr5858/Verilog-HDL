@@ -1,0 +1,35 @@
+/*
+	!!! --- PWM DATA PATH MODULE --- !!!
+	
+	Generate PWM signal with 2 counters
+	
+	Period counter:
+		CNT_P == PERIOD --> reset PWM cycle
+		
+	Duty counter:
+		CNT_D == DUTY --> PWM signal set to low
+	
+	!!! --- End of module specification --- !!!
+*/
+
+module PWM_DP
+(
+	// Period var
+	input  wire [7:0] PERIOD;
+	output wire [7:0] CNT_P_O,
+							CNT_P_N;
+	
+	// Duty var
+	input  wire [7:0] DUTY;
+	output wire [7:0] CNT_D_O,
+							CNT_D_N;
+							
+	// PWM signal
+	output wire			pwm;
+);
+
+// Duty Operations
+assign CNT_D_N = CNT_D_O + 8'b1;
+
+// Period Operations
+assign CNT_P_N = CNT_P_O + 8'b1;

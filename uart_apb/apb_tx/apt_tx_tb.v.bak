@@ -1,0 +1,25 @@
+/* 
+	----------------------------------------
+			!!! UART APB TX Testbench !!!
+	----------------------------------------
+	
+*/
+
+module apb_tx_tb();
+
+/* ---------------
+	INPUT of apb_tx
+	--------------- */
+wire			clk,
+wire			rstn,		// active LOW to reset
+wire			sel,		// activate apb_tx module
+wire			set,		// set DUTY & PERIOD. enable PWM
+wire 			mode,		// switch between 8 bit & 10 bit tx
+wire [7:0]  din,		// input data for transmission
+wire [19:0] baud,		// bauddiv
+	
+/* ----------------
+	OUTPUT of apb_tx
+	---------------- */
+wire tx_en,	// enable transmission
+wire tx_out	// transmitted data
